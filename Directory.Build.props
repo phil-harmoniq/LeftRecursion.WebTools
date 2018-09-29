@@ -1,0 +1,27 @@
+<Project>
+ 
+  <!-- Assembly Meta-Data -->
+  <PropertyGroup>
+    <Authors>LeftRecursion</Authors>
+    <Copyright>MIT</Copyright>
+    <Description></Description>
+    <PackageProjectUrl>https://phil-harmoniq.github.io/projects/SolutionToolkit</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/LeftRecursion/LeftRecursion.WebTools</RepositoryUrl>
+    <PackageLicenseUrl>https://github.com/LeftRecursion/LeftRecursion.WebTools/blob/master/LICENSE.md</PackageLicenseUrl>
+    <PackageIconUrl></PackageIconUrl>
+    <PackageTags></PackageTags>
+  </PropertyGroup>
+
+  <!-- Versioning -->
+  <PropertyGroup>
+    <VersionPrefix>0.0.1</VersionPrefix>
+    <VersionSuffix></VersionSuffix>
+  </PropertyGroup>
+
+  <!-- Auto-Generated Properties -->
+  <PropertyGroup>
+    <CiBuildNumber></CiBuildNumber>
+    <VersionSuffix Condition=" '$(CiBuildNumber)' != '' And '$(VersionSuffix)' != '' ">$(VersionSuffix)-ci$(CiBuildNumber)</VersionSuffix>
+  </PropertyGroup>
+
+</Project>
