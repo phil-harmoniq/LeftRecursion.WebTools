@@ -2,6 +2,6 @@ namespace LeftRecursion.WebTools
 {
     public interface IHttpClientLogger
     {
-         void Log(string message);
+        void Log(string message);
     }
 }

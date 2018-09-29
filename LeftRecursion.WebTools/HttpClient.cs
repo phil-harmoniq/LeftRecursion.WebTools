@@ -5,18 +5,18 @@ using System.Threading.Tasks;
 
 namespace LeftRecursion.WebTools
 {
-    internal class HttpClient : IHttpClient
+    public class HttpClient : IHttpClient
     {
         private readonly IHttpClientLogger _logger;
 
         public HttpClient()
         {
-            _logger = new DefaultHttpClientLogger();
+            _logger = new ConsoleLogger();
         }
 
-        public HttpClient(IHttpClientLogger httpClientLogger)
+        public HttpClient(IHttpClientLogger logger)
         {
-            _logger = httpClientLogger;
+            _logger = logger;
         }
 
         public string Get(string url, Dictionary<string, string> headers = null)
